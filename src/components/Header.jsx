@@ -1,6 +1,6 @@
 import React from "react";
-import Home from './Home';
 import { Switch, Route, Link } from 'react-router-dom';
+
 
 function Header(){
   const header = {

@@ -1,20 +1,21 @@
 import React from "react";
 import { Switch, Route, Link } from 'react-router-dom';
-import tesla from '../assets/images/tesla.jpeg';
+import tesla from '../assets/images/tesla.jpg';
+import Header from './Header';
 
 function Home(){
-  // const test = {
-  //   color: 'red'
-  // }
+  const img = {
+    width: '100%',
+    position: 'absolute',
+    top: '0px',
+    left: '0px',
+    zIndex: '0'
+  }
   return(
-    <div>
-      <h1>Test Home</h1>
-      <a><Link to="/Models">Models</Link></a>
-      <br/>
-      <img src={tesla}/>
-    </div>
+  <div>
+    <img style={img} src={tesla}/>
+  </div>
   );
-
 }
 
 export default Home;
